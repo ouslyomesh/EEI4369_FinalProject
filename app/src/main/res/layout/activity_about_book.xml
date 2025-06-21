@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutBook">
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:padding="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="vertical">-->
+
+<!--            &lt;!&ndash; Movie Image &ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:id="@+id/movieImage"-->
+<!--                android:layout_width="187dp"-->
+<!--                android:layout_height="269dp"-->
+<!--                android:src="@drawable/crimepunishment" /> &lt;!&ndash; Replace with your image &ndash;&gt;-->
+
+
+<!--            &lt;!&ndash; Movie Title &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/movieTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="&#10;Crime and Punishment"-->
+<!--                android:textColor="#3F51B5"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Movie Description &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/movieDescription"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="388dp"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                android:text="&#10;'Crime and Punishment' by Fyodor Dostoevsky is a psychological novel set in 19th-century St. Petersburg, Russia. It follows the story of Rodion Raskolnikov, a poor former student who believes he is intellectually superior and morally justified in killing a corrupt pawnbroker to test his theory that certain people have the right to commit crimes for the greater good. After the murder, Raskolnikov experiences intense guilt, paranoia, and psychological torment. His internal conflict leads him through a journey of isolation, suffering, and eventual confession. &#10; &#10;The novel explores deep philosophical themes such as morality, redemption, justice, and the nature of good and evil. Through characters like Sonia, a humble and devout prostitute, and Porfiry, a shrewd detective, Dostoevsky examines the consequences of alienation and the possibility of spiritual rebirth. In the end, Raskolnikov's acceptance of guilt and punishment becomes the path toward his moral and emotional resurrection.-->
+<!--"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Rate this Book"-->
+
+<!--                android:textColor="#3F51B5"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Rating System &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ratingLayout"-->
+<!--                android:layout_width="275dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                &lt;!&ndash; Increment Button &ndash;&gt;-->
+<!--                <Button-->
+<!--                    android:id="@+id/buttonIncrement"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="+" />-->
+
+<!--                &lt;!&ndash; Rating Value &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:id="@+id/textRating"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="8dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="4"-->
+<!--                    android:textSize="24sp" />-->
+
+<!--                &lt;!&ndash; Decrement Button &ndash;&gt;-->
+<!--                <Button-->
+<!--                    android:id="@+id/buttonDecrement"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="-" />-->
+<!--            </LinearLayout>-->
+
+<!--            <Button-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Back"-->
+<!--                android:textSize="16sp" />-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
