@@ -9,13 +9,16 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="701dp"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,65 +49,111 @@
             <TextView
                 android:id="@+id/movieDescription"
                 android:layout_width="wrap_content"
-                android:layout_height="380dp"
+                android:layout_height="302dp"
                 android:layout_marginBottom="24dp"
                 android:text="&#10;'Crime and Punishment' by Fyodor Dostoevsky is a psychological novel set in 19th-century St. Petersburg, Russia. It follows the story of Rodion Raskolnikov, a poor former student who believes he is intellectually superior and morally justified in killing a corrupt pawnbroker to test his theory that certain people have the right to commit crimes for the greater good. After the murder, Raskolnikov experiences intense guilt, paranoia, and psychological torment. His internal conflict leads him through a journey of isolation, suffering, and eventual confession. &#10; &#10;The novel explores deep philosophical themes such as morality, redemption, justice, and the nature of good and evil. Through characters like Sonia, a humble and devout prostitute, and Porfiry, a shrewd detective, Dostoevsky examines the consequences of alienation and the possibility of spiritual rebirth. In the end, Raskolnikov's acceptance of guilt and punishment becomes the path toward his moral and emotional resurrection.
 "
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rate this Book"
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Rate this Book"-->
 
-                android:textAlignment="center"
-                android:textColor="#3F51B5"
-                android:textStyle="bold" />
+            <!--                android:textAlignment="center"-->
+            <!--                android:textColor="#3F51B5"-->
+            <!--                android:textStyle="bold" />-->
 
-            <!-- Rating System -->
-            <LinearLayout
-                android:id="@+id/ratingLayout"
-                android:layout_width="275dp"
-                android:layout_height="45dp"
-                android:gravity="center"
-                android:orientation="horizontal">
 
-                <!-- Increment Button -->
-                <Button
-                    android:id="@+id/buttonIncrement"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#2DA3B1"
-                    android:text="+" />
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/ratingLayout"-->
+            <!--                android:layout_width="281dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="horizontal">-->
 
-                <!-- Rating Value -->
-                <TextView
-                    android:id="@+id/textRating"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="8dp"
-                    android:gravity="center"
-                    android:text="4"
-                    android:textSize="24sp" />
+            <!--                &lt;!&ndash; Increment Button &ndash;&gt;-->
+            <!--                <Button-->
+            <!--                    android:id="@+id/buttonIncrement"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:backgroundTint="#2DA3B1"-->
+            <!--                    android:text="+"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textSize="20sp" />-->
 
-                <!-- Decrement Button -->
-                <Button
-                    android:id="@+id/buttonDecrement"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#2DA6B4"
-                    android:text="-" />
-            </LinearLayout>
+            <!--                &lt;!&ndash; Rating Value &ndash;&gt;-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textRating"-->
+            <!--                    android:layout_width="50dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginHorizontal="8dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="4"-->
+            <!--                    android:textSize="24sp" />-->
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Review"
-                android:textSize="16sp" />
+            <!--                &lt;!&ndash; Decrement Button &ndash;&gt;-->
+            <!--                <Button-->
+            <!--                    android:id="@+id/buttonDecrement"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:backgroundTint="#2DA3B1"-->
+            <!--                    android:text="-"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textSize="25sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/buttonReview"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Review"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
         </LinearLayout>
     </ScrollView>
 
+    <Button
+        android:id="@+id/buttonReview"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:text="Review"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonShop"
+        app:layout_constraintStart_toEndOf="@+id/buttonback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:text="Back"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/buttonShop"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:text="Shop"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

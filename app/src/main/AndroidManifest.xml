@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +19,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EEI4369_FinalProject"
         tools:targetApi="31">
+        <activity
+            android:name=".ShopLocation"
+            android:exported="false"
+            android:parentActivityName=".aboutBook" />
+        <activity
+            android:name=".Update"
+            android:exported="false"
+            android:parentActivityName=".Reviews" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:parentActivityName=".Reviews" />
+        <activity
+            android:name=".Reviews"
+            android:exported="false"
+            android:label="Reviews" />
         <activity
             android:name=".bookCategories"
             android:exported="false" />
@@ -38,6 +59,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCH_RD5HCABsEJWSF85I7FYL6uTZ8p4zdI" />
+
     </application>
 
 </manifest>

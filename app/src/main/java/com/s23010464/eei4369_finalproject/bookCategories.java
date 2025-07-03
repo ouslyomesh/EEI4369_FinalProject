@@ -1,6 +1,9 @@
 package com.s23010464.eei4369_finalproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class bookCategories extends AppCompatActivity {
+
+    ImageView backCategories;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,14 @@ public class bookCategories extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+
+
+        backCategories = findViewById(R.id.backCat);
+        backCategories.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), home.class));
+            finish();
         });
     }
 }
